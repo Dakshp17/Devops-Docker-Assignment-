@@ -32,8 +32,8 @@
             const responseDiv = document.getElementById('response');
             
             try {
-                const response = await fetch('http://localhost:5000/submit', {
-                    method: 'POST',
+                const response = await fetch('http://65.0.122.222:5000/submit', {
+                    method: 'get',
                     headers: {
                         'Content-Type': 'application/json'
                     },
