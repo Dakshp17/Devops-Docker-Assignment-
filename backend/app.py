@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submit', methods=['get'])
 def submit():
     # Try getting JSON first, then form data
     data = request.get_json(silent=True)
